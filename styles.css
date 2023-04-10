@@ -1,19 +1,131 @@
 * {
     margin: 0;
     padding: 0;
-}
-body {
-    font-family:sans-serif;
-}
-.container {
-    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    width: 80%;
     margin: auto;
     text-align: center;
-}
-hr {
+    background-color: #fff;
+    border-radius:0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  hr {
     margin: 50px 0;
-}
-form {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  form {
     width: 100%;
     margin: auto;
-}
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
+  
+  label[for="readStatus"] {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  .book-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .book {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .book h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .book p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .book .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .book .read-status {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
