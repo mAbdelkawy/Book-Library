@@ -44,6 +44,7 @@ function updateBooks() {
   // Loop through the library array and create a card for each book
   myLibrary.forEach((book, index) => {
     const card = document.createElement("div");
+    card.classList.add("book");
 
     const title = document.createElement("p");
     title.textContent = `Title: ${book.title}`;
@@ -63,6 +64,7 @@ function updateBooks() {
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
+    deleteButton.classList.add("delete-button");
     // Add a click event listener to the delete button to remove the book from the library and the page
     deleteButton.addEventListener("click", () => {
       myLibrary.splice(index, 1);
