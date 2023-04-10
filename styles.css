@@ -103,6 +103,7 @@
     color: #fff;
     border: none;
     padding: 5px 10px;
+    margin-right: 15px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -111,5 +112,19 @@
   
   .book .delete-button:hover {
     background-color: #c82333;
+  }
+  .book .toggle-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book .toggle-button:hover {
+    background-color: #0069d9;
   }
   

@@ -72,6 +72,20 @@ function updateBooks() {
     });
     card.appendChild(deleteButton);
 
+    const toggleState = document.createElement("button");
+    toggleState.textContent = "Toggle read state";
+    toggleState.classList.add("toggle-button");
+    // Add a click event listener to the toggle button to toggle the book read status
+    toggleState.addEventListener("click", () => {
+      if (myLibrary[index].read === "I have read the book") {
+        myLibrary[index].read = "I have not read the book";
+      } else {
+        myLibrary[index].read = "I have read the book";
+      }
+      updateBooks();
+    });
+    card.appendChild(toggleState);
+
     booksContainer.appendChild(card);
   });
 }
